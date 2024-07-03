@@ -44,6 +44,7 @@ jobs:
 
       # https://github.com/marketplace/actions/free-disk-space-ubuntu
       - name: Free Disk Space (Ubuntu)
+        continue-on-error: true
         uses: jlumbroso/free-disk-space@main
         with:
           # this might remove tools that are actually needed,
@@ -70,6 +71,7 @@ jobs:
 
       # https://github.com/marketplace/actions/free-disk-space-ubuntu
       - name: Free Disk Space (Docker)
+        continue-on-error: true
         uses: jlumbroso/free-disk-space@main
         with:
           # this might remove tools that are actually needed,
